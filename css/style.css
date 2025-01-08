@@ -8634,8 +8634,8 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .ftco-about .img-about .img {
     display: block;
-    width: 100%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     position: relative;
     z-index: 1; }
 
@@ -9403,6 +9403,7 @@ textarea.form-control {
 
 .contact-section .img {
   width: 100%;
+  height: 90%;
   background-position: top center; }
   @media (max-width: 991.98px) {
     .contact-section .img {
@@ -9412,7 +9413,8 @@ textarea.form-control {
   color: #002D62; }
 
 .contact-section .contact-form {
-  width: 100%; }
+  width: 100%; 
+  height: 90%;}
   @media (max-width: 767.98px) {
     .contact-section .contact-form .btn-primary {
       display: block;
