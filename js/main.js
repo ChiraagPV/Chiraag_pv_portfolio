@@ -277,8 +277,8 @@
 			event.preventDefault();
 
 			$('html,body').animate({
-				scrollTop: $('.goto-here').offset().top
-				//scrollTop: $('#about-section').offset().top
+				//scrollTop: $('.goto-here').offset().top
+				scrollTop: $('#about-section').offset().top
 			}, 500, 'easeInOutExpo');
 			
 			return false;
