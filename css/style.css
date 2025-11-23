@@ -9676,25 +9676,25 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-/* Publication entry — improved styling (paste into css/style.css) */
+/* Publication entry — dark blue & white theme (paste into css/style.css) */
 
 .publication-entry {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border: 1px solid rgba(255,255,255,0.04);
-  border-left: 6px solid #34d399; /* accent */
+  background: linear-gradient(180deg, rgba(6,18,40,0.96), rgba(4,12,30,0.96));
+  border: 1px solid rgba(255,255,255,0.05);
+  border-left: 6px solid #0b5bd7; /* dark-blue accent */
   padding: 20px 22px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(6, 12, 24, 0.55);
+  box-shadow: 0 8px 24px rgba(3,8,24,0.65);
   transition: transform 180ms ease, box-shadow 180ms ease;
   margin-bottom: 22px;
   overflow: hidden;
-  color: #e6eef8;
+  color: #ffffff;
   backdrop-filter: blur(4px);
 }
 
 .publication-entry:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(6, 12, 24, 0.7);
+  box-shadow: 0 18px 44px rgba(3,8,24,0.75);
 }
 
 /* Title */
@@ -9709,21 +9709,19 @@ textarea.form-control {
 .publication-entry .publication-title a {
   color: #ffffff;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgba(52,211,153,0.12), rgba(110,231,183,0.04));
   padding: 2px 6px;
   border-radius: 6px;
 }
 
 .publication-entry .publication-title a:hover {
-  color: #03211a;
-  text-decoration: none;
-  background-image: linear-gradient(90deg, #6ee7b7, #34d399);
-  box-shadow: 0 6px 16px rgba(52,211,153,0.10);
+  color: #021230;
+  background-image: linear-gradient(90deg, #a9d0ff, #0b5bd7);
+  box-shadow: 0 6px 18px rgba(11,91,215,0.12);
 }
 
 /* Meta row */
 .publication-entry .meta {
-  color: #9fb3d1;
+  color: rgba(255,255,255,0.78);
   font-size: 0.92rem;
   margin: 6px 0 12px 0;
   display: flex;
@@ -9743,7 +9741,7 @@ textarea.form-control {
 .publication-entry .meta .dot-like {
   width: 8px;
   height: 8px;
-  background: rgba(159,179,209,0.35);
+  background: rgba(255,255,255,0.12);
   border-radius: 50%;
   display: inline-block;
 }
@@ -9751,7 +9749,7 @@ textarea.form-control {
 /* Description */
 .publication-entry p {
   margin: 0;
-  color: #cfe9ff;
+  color: rgba(255,255,255,0.92);
   line-height: 1.65;
   font-size: 0.97rem;
 }
@@ -9762,18 +9760,18 @@ textarea.form-control {
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 0.82rem;
-  color: #0b1220;
-  background: linear-gradient(90deg,#6ee7b7,#34d399);
+  color: #021230;
+  background: linear-gradient(90deg,#a9d0ff,#0b5bd7);
   margin-top: 12px;
 }
 
 /* Make sure links inside descriptions are visible */
 .publication-entry a {
-  color: #a7d9ff;
+  color: #cfe3ff;
   text-decoration: underline;
 }
 .publication-entry a:hover {
-  color: #d6f8ff;
+  color: #ffffff;
   text-decoration: none;
 }
 
