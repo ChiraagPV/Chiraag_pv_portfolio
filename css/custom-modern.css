@@ -1,0 +1,436 @@
+/* ==========================================================================
+   Chiraag P V - Clean, Aesthetic Portfolio Styles & Certificate Showcase
+   ========================================================================== */
+
+:root {
+  --nv-green: #76B900;
+  --nv-green-dark: #5c9100;
+  --brand-navy: #002D62;
+  --text-primary: #1e293b;
+  --text-muted: #64748b;
+  --card-border: #e2e8f0;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #334155;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Fix Hero Split Background & Overlay
+   ========================================================================== */
+.hero-wrap .overlay {
+  display: none !important;
+}
+
+.hero-wrap {
+  background: #ffffff !important;
+}
+
+.slider-text .subheading {
+  color: var(--brand-navy) !important;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.slider-text h1 {
+  color: #0f172a !important;
+  font-weight: 800;
+}
+
+.slider-text h2 {
+  color: #1e293b !important;
+}
+
+.slider-text h2 span {
+  color: var(--brand-navy) !important;
+  text-decoration: underline;
+}
+
+/* Navbar: Clean and simple */
+.ftco_navbar .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--brand-navy) !important;
+}
+
+/* ==========================================================================
+   Aesthetic, Clean NVIDIA Featured Certificate Card
+   ========================================================================== */
+.featured-cert-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-left: 5px solid var(--nv-green);
+  border-radius: var(--radius-md);
+  padding: 24px 26px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-cert-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.featured-cert-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .featured-cert-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.featured-cert-badge-img {
+  width: 95px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+}
+
+.featured-cert-content {
+  flex-grow: 1;
+}
+
+.featured-cert-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--nv-green-dark);
+  background: rgba(118, 185, 0, 0.12);
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.featured-cert-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.featured-cert-issuer {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--brand-navy);
+  margin-bottom: 8px;
+}
+
+.featured-cert-meta {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.featured-cert-meta strong {
+  color: #334155;
+}
+
+.featured-cert-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+.featured-cert-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-cert-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #002D62;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-cert-verify:hover {
+  background: #001f44;
+  color: #ffffff;
+}
+
+.btn-cert-preview {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-cert-preview:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* ==========================================================================
+   Clean List for Other Certificates
+   ========================================================================== */
+.clean-cert-list {
+  margin-top: 15px;
+}
+
+.clean-cert-item {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.clean-cert-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.clean-cert-info h4 {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.clean-cert-info h4 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.clean-cert-info h4 a:hover {
+  color: var(--brand-navy);
+}
+
+.clean-cert-info .issuer-name {
+  font-size: 13.5px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.clean-cert-info .issuer-name strong {
+  color: #334155;
+}
+
+.clean-cert-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-navy);
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.clean-cert-link:hover {
+  color: var(--nv-green-dark);
+}
+
+/* ==========================================================================
+   Publications & Articles: Solid, High Contrast Dark Cards
+   ========================================================================== */
+.publication-entry {
+  background: #0d1b2a !important; /* solid deep dark blue */
+  border-left: 5px solid #1b63ff !important;
+  padding: 24px 28px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 24px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.publication-entry:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25) !important;
+}
+
+.publication-entry .publication-title a {
+  color: #ffffff !important;
+  font-size: 1.22rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.publication-entry .publication-title a:hover {
+  color: #60a5fa !important;
+  text-decoration: underline !important;
+}
+
+.publication-entry .meta {
+  color: #94a3b8 !important;
+  font-size: 0.95rem !important;
+  margin-top: 4px !important;
+  margin-bottom: 12px !important;
+}
+
+.publication-entry .meta span {
+  color: #60a5fa !important;
+  font-weight: 600 !important;
+}
+
+.publication-entry p {
+  color: #e2e8f0 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.65 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   Certificate Lightbox Modal (Clean, high-contrast)
+   ========================================================================== */
+.custom-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 18, 30, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.custom-modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.custom-modal-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  max-width: 850px;
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.modal-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 22px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.modal-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  color: #64748b;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.modal-close-btn:hover {
+  color: #0f172a;
+}
+
+.modal-body-content {
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.modal-cert-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.modal-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 22px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cred-id-wrapper {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  color: #475569;
+}
+
+.cred-id-val {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.btn-verify-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #002D62;
+  color: #ffffff !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-verify-primary:hover {
+  background: #001f44;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 45, 98, 0.25);
+}
